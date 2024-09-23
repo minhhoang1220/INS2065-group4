@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -x  # Bật chế độ debug
 
 rm -f tmp/pids/server.pid
 
