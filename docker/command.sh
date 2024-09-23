@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 rm -f tmp/pids/server.pid
 
 bundle check || bundle install --binstubs=$BUNDLE_BIN

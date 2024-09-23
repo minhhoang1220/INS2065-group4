@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 require 'sidekiq/web'
 
 Rails.application.routes.draw do
