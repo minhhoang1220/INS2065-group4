@@ -1,0 +1,30 @@
+<%= form_with(model: seating) do |form| %>
+<% if seating.errors.any? %>
+<div id="error_explanation" class="bg-red-50 p-6 rounded text-red-800">
+  <h2 class="text-lg font-semibold mb-3"><%= pluralize(seating.errors.count, "error") %> prohibited this seating from being saved:</h2>
+
+  <ul class="list-disc leading-relaxed">
+    <% seating.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+
+  <div class="mb-6">
+        <%= form.label :screen_id, class: label_class %>
+          <%= form.text_field :screen_id, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :seat_code, class: label_class %>
+          <%= form.text_field :seat_code, class: input_class %>
+      </div>
+
+<%= form.submit class: button_class(theme: 'primary') %>
+
+<% if seating.persisted? %>
+<%= link_to "Cancel", seating, class: "text-neutral-700 underline inline-block ml-3" %>
+<% else %>
+<%= link_to "Cancel", seatings_path, class:  "text-neutral-700 underline inline-block ml-3" %>
+<% end %>
+<% end %>

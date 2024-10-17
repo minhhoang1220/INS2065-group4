@@ -1,0 +1,33 @@
+<div class="max-w-3xl mx-auto px-4">
+  <div class="flex items-center justify-between">
+    <h1 class="flex-1 font-bold text-3xl">Movie_show</h1>
+
+    <div class="flex-wrap lg:flex items-center lg:space-x-3">
+      <%= link_to movie_shows_path, class: button_class(theme: "transparent") do %>
+      All Movie_shows
+      <% end %>
+      <%= link_to edit_movie_show_path(@movie_show), class: button_class(theme:"primary") do %>
+      Edit
+      <% end %>
+    </div>
+  </div>
+
+  <ul class="text-slate-700">
+      <li>
+        <p class="font-semibold">Movie:</p>
+        <p><%= @movie_show.movie %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Theatre:</p>
+        <p><%= @movie_show.theatre %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Date:</p>
+        <p><%= @movie_show.date %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Price:</p>
+        <p><%= @movie_show.price %></p>
+      </li>
+  </ul>
+</div>
