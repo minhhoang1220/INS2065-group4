@@ -17,6 +17,7 @@ class MoviesTest < ApplicationSystemTestCase
     fill_in "Director", with: @movie.director
     fill_in "Duration", with: @movie.duration
     fill_in "Genre", with: @movie.genre
+    fill_in "Image", with: @movie.image
     fill_in "Movie title", with: @movie.movie_title
     fill_in "Release date", with: @movie.release_date
     fill_in "Status", with: @movie.status
@@ -33,6 +34,7 @@ class MoviesTest < ApplicationSystemTestCase
     fill_in "Director", with: @movie.director
     fill_in "Duration", with: @movie.duration
     fill_in "Genre", with: @movie.genre
+    fill_in "Image", with: @movie.image
     fill_in "Movie title", with: @movie.movie_title
     fill_in "Release date", with: @movie.release_date
     fill_in "Status", with: @movie.status

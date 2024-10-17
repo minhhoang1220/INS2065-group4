@@ -62,8 +62,9 @@ ActiveRecord::Schema[7.0].define(version: 2024_10_17_071048) do
     t.string "genre"
     t.date "release_date"
     t.string "director"
-    t.time "duration"
+    t.integer "duration"
     t.string "status"
+    t.binary "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -5,13 +5,15 @@ one:
   genre: MyString
   release_date: 2024-10-17
   director: MyString
-  duration: 2024-10-17 07:12:29
+  duration: 1
   status: MyString
+  image: 
 
 two:
   movie_title: MyString
   genre: MyString
   release_date: 2024-10-17
   director: MyString
-  duration: 2024-10-17 07:12:29
+  duration: 1
   status: MyString
+  image: 

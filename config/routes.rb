@@ -3,9 +3,9 @@
 require 'sidekiq/web'
 
 Rails.application.routes.draw do
+  resources :movies
   resources :theatres
   resources :movie_shows
-  resources :movies
   resources :screens
   resources :seatings
   resources :bookings
