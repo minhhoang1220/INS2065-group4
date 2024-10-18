@@ -3,5 +3,6 @@ class Movie < ApplicationRecord
     has_many :theatres, through: :movie_shows
     validates_presence_of :movie_title, :genre, :release_date, :director, :duration, :status
     validates_numericality_of :duration
+    validates_uniqueness_of :movie_title, scope: [:genre, :release_date, :director, :duration]
   end
   
